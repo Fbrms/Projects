@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    height: 100vh;
+}
+
+.main-container> div::before{
+    content: "";
+    padding-top: 100%;
+    display: block;
+}
+
+.cDivs{
+    border: 1px solid #555;
+}
+
+.cDivsH {
+    background: black;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+}
+.nav>input{
+    padding: 10px;
+}
